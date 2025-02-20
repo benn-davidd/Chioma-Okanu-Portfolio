@@ -1,0 +1,203 @@
+@media only screen and (min-width: 1200px) {
+  /* PROFILE SECTION */
+  #profile {
+    height: 83vh;
+    margin-bottom: 4rem;
+  }
+
+  /* PROJECTS SECTION */
+  .projects-list {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* NAV */
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  /* -- MENU FUNCTION -- */
+  #sidebar-active:checked ~ .menu-links {
+    right: 0;
+  }
+
+  #sidebar-active:checked ~ #overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .open-sidebar-button {
+    width: 55px;
+  }
+
+  /* PROFILE SECTION */
+  #profile {
+    height: 90vh;
+  }
+
+  #profile,
+  .section-container {
+    display: block;
+  }
+
+  section,
+  .section-container {
+    height: fit-content;
+  }
+
+  section {
+    margin: 0 5%;
+  }
+
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+
+  /* ABOUT SECTION */
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 50px; */
+  }
+
+  .col {
+    display: flex;
+    justify-content: center;
+  }
+
+  #about .col {
+    flex-wrap: wrap;
+  }
+
+  /* .about-info {
+    width: 100%;
+  } */
+
+  /* PROJECTS SECTION */
+  .layer {
+    height: 100%;
+  }
+
+  .layer a {
+    font-size: 40px;
+  }
+
+  /* CONTACT SECTION */
+  #contact .col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* FOOTER SECTION */
+}
+
+@media only screen and (max-width: 600px) {
+  /* NAV */
+  .logo {
+    font-size: 2rem;
+  }
+
+  .open-sidebar-button {
+    width: 50px;
+  }
+  /* PROFILE SECTION */
+  #profile h1 {
+    font-size: xx-large;
+  }
+
+  #profile .selection__text__p1 {
+    font-size: large;
+  }
+
+  #profile .section__text__p2 {
+    font-size: larger;
+  }
+
+  /* CONTACT SECTION */
+  .card p{
+    font-size: medium;
+  }
+
+  .form .btn2 {
+    padding: 14px 20px;
+    font-size: 14px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+
+  /* FOOTER SECTION */
+}
+
+@media only screen and (max-width: 500px) {
+  section {
+    padding: 10px;
+  }
+
+  #hamburger-nav {
+    height: 10vh;
+  }
+
+  /* PROFILE SECTION */
+  #profile {
+    height: 65vh;
+    font-size-adjust: 0.5;
+  }
+
+  .title, .section__text__p1 {
+    font-size-adjust: 0.4;
+  }
+  
+  .section__pic-container {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    margin: 30px 50px;
+  }
+
+  /* ABOUT SECTION */
+  .about-info h3 {
+    font-size: large;
+  }
+
+  .about-info p {
+    font-size: medium;
+  }
+
+  #about span {
+    font-size: small;
+  }
+
+  /* CONTACT SECTION */
+  .card p{
+    font-size: medium;
+  }
+  
+  .form .btn2 {
+    padding: 14px 20px;
+    font-size: 12px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+
+  /* FOOTER SECTION */
+  .footer-links {
+    gap: 15px;
+  }
+}

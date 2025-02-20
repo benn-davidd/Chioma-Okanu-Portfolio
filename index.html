@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chioma Okanu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="shortcut icon" href="./assets/arrow.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script
+      src="https://kit.fontawesome.com/bcb5ef96de.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  
+  <body>
+    <!-- NAV SECTION -->
+    <nav id="desktop-nav">
+      <div class="logo">Chioma<span class="logo-dot">.</span></div>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about" class="active-link">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Chioma<span class="logo-dot">.</span></div>
+      <div class="hamburger-menu">
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="bars"><path fill="#111111" d="M3,8H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,8Zm18,8H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-5H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"></path></svg>
+        </label>
+
+        <label id="overlay" for="sidebar-active"></label>
+
+        <div class="menu-links">
+          <label for="sidebar-active" class="close-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="multiply"><path fill="#111111" d="M13.41,12l6.3-6.29a1,1,0,1,0-1.42-1.42L12,10.59,5.71,4.29A1,1,0,0,0,4.29,5.71L10.59,12l-6.3,6.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l6.29,6.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z"></path></svg>
+          </label>
+
+          <a class="menu-items" href="#hamburger-nav" onclick="toggleMenu()">Home</a>
+          <a class="menu-items" href="#about" onclick="toggleMenu()">About</a>
+          <a class="menu-items" href="#projects" onclick="toggleMenu()">Projects</a>
+          <a class="menu-items" href="#contact" onclick="toggleMenu()">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <!-- PROFILE SECTION -->
+    <section id="profile">
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/profile.png" alt="Chioma Okanu profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__main__text__p1">Hello, I'm</p>
+          <h1 class="main-title">Chioma Okanu</h1>
+          <p class="section__text__p2">Business Administrator</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-1"
+              onclick="window.open('./assets/resume-example.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-2" onclick="location.href='#contact'">
+              Contact Me
+            </button>
+          </div>
+          </div>
+        </div>
+      </div>     
+    </section>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <p class="section__text__p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="row">
+        <div class="col about-col">
+          <div class="about-info col-sm-12 col-lg-6">
+          <h3>My Introduction</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam soluta suscipit vitae cum corrupti fuga repellat quasi architecto culpa sint. Maxime velit quibusdam provident, aspernatur eum enim dolore commodi voluptate?
+          </p>
+      </div>
+      <div class="col">
+        <div class="skills">
+          <div class="skills-box">
+            <div class="skills-header">
+              <h3>Skills</h3>
+            </div>
+            <div class="skills-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Bootstrap</span>
+              <span>JavaScript</span>
+              <span>Vue</span>
+              <span>React</span>
+              <span>Angular</span>
+            </div>
+          </div>
+          <div class="skills-box">
+            <div class="skills-header">
+              <h3>Software Proficiency</h3>
+            </div>
+            <div class="skills-list">
+              <span>Ms Word</span>
+              <span>Ms Excel</span>
+              <span>Google Docs</span>
+              <span>Google Sheets</span>
+              <span>mySQL</span>
+              <span>postgreSQL</span>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="projects-list">
+        <div class="projects project-1">
+          <img src="./assets/project-1.png">
+          <div class="layer">
+            <h3>Title 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="./assets/resume-example.pdf" target="_blank"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+          </div>
+        </div>
+        <div class="projects project-2">
+          <img src="./assets/project-2.png">
+          <div class="layer">
+            <h3>Title 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+          </div>
+        </div>
+        <div class="projects project-3">
+          <img src="./assets/project-3.png">
+          <div class="layer">
+            <h3>Title 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- OFF-CANVAS -->
+       
+    </section>
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card col-sm-12 col-lg-6">
+              <div class="card-body">
+                <p class="section__text__p1">Get in Touch</p>
+                <h1 class="title">Contact Me</h1>
+                <div class="contact-details">
+                  <p><i class="fa-solid fa-envelope"></i> chiomaokanu2002@gmail.com</p>
+                  <p><i class="fa-solid fa-phone"></i> +44 7450739825</p>
+                  <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="contact-left">
+              <p class="section__text__p1">Get in Touch</p>
+              <h1 class="title">Contact Me</h1>
+              <p><i class="fa-solid fa-envelope"></i> chiomaokanu2002@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i> +44 7450739825</p>
+              <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+              </div>
+            </div> -->
+            <div class="form mb-3 col-sm-12 col-lg-6">
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+              <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Email">
+              <textarea name="Message" class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="4"></textarea>
+              <div>
+                <button type="submit" class="btn btn2">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer pt-3 mt-4">
+      <ul class="footer-links nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#desktop-nav" class="nav-link px-2 text-black">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link px-2 text-black">About</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link px-2 text-black">Projects</a></li>
+        <!-- <li class="nav-item"><a href="#contact" class="nav-link px-2 text-black">Contact</a></li> -->
+      </ul>
+      <p class="text-center text-body-secondary">© 2024 Ben-Emu David</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
