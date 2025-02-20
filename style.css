@@ -127,7 +127,7 @@ nav {
 
   position: fixed;
   top: 0;
-  right: -100%;
+  right: -150%;
   z-index: 10;
   width: 300px;
 
@@ -175,7 +175,7 @@ nav {
 section {
   padding: 50px;
   padding-top: 4vh;
-  height: 96vh;
+  height: 100vh;
   margin: 0 1.5rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -192,7 +192,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 83vh;
+  height: 90vh;
   background-color: #e5e1da;
   margin: 0 0;
 } 
@@ -392,6 +392,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
+  padding: 20px;
 }
 
 .projects {
