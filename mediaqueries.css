@@ -142,7 +142,7 @@
   }
 
   /* CONTACT SECTION */
-  .card p{
+  .card p {
     font-size: medium;
   }
 
@@ -166,7 +166,7 @@
     padding-left: 20px;
   }
 
-  /* NAV */  
+  /* NAV */
   .logo {
     font-size: 1.5rem;
   }
@@ -178,10 +178,11 @@
     align-content: center;
   }
 
-  .title, .section__text__p1 {
+  .title,
+  .section__text__p1 {
     font-size-adjust: 0.4;
   }
-  
+
   .section__pic-container {
     display: flex;
     height: 200px;
@@ -212,10 +213,10 @@
   }
 
   /* CONTACT SECTION */
-  .card p{
+  .card p {
     font-size: medium;
   }
-  
+
   .form .btn2 {
     padding: 14px 20px;
     font-size: 12px;
