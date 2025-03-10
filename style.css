@@ -195,7 +195,7 @@ section {
   height: 90vh;
   background-color: #e5e1da;
   margin: 0 0;
-} 
+}
 
 .section__pic-container {
   display: flex;
@@ -558,5 +558,5 @@ footer {
 }
 
 .nav-item a:hover {
-  color: white !important
+  color: white !important;
 }
