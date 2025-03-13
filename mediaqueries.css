@@ -81,7 +81,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* gap: 50px; */
   }
 
   .col {
@@ -103,8 +102,8 @@
   }
 
   .projects-list {
-    margin: 1rem 0.5rem 0;
-    grid-gap: 1.5rem;
+    margin: 1rem 0 0;
+    grid-gap: 1rem;
   }
 
   /* CONTACT SECTION */
@@ -116,8 +115,6 @@
   #contact .row {
     gap: 2rem;
   }
-
-  /* FOOTER SECTION */
 }
 
 @media only screen and (max-width: 654px) {
@@ -164,15 +161,17 @@
 
   /* PROJECTS SECTION */
   .projects-list {
-    margin: 1rem 4rem 0;
+    margin: 1rem 2rem 0;
+    grid-gap: 1.5rem;
+    justify-items: center;
   }
 
   /* CONTACT SECTION */
-  .card p {
+  .contact-left p {
     font-size: medium;
   }
 
-  .form .btn2 {
+  form .btn2 {
     padding: 14px 20px;
     font-size: 14px;
     margin-top: 15px;
@@ -253,14 +252,14 @@
 
   /* PROJECTS SECTION */
   .projects-list {
-    margin: 1rem 0.7rem 0;
+    margin: 1rem 0.8rem 0;
     grid-gap: 1rem;
-    /* padding: 5px; */
+    grid-template-columns: minmax(180px, 1fr);
   }
 
   .layer {
-    padding: 0 20px;
-    font-size: small;
+    padding: 0 18px;
+    font-size: 0.8rem;
   }
 
   .layer h3 {
