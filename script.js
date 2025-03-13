@@ -1,7 +1,7 @@
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
-  // const menuItems = document.querySelectorAll(".menu-items");
-  const icon = document.querySelector(".hamburger-icon");
+  const menuItems = document.querySelectorAll(".menu-items");
+  const icon = document.querySelector(".hamburger");
   document.querySelectorAll(".menu-links a").forEach((link) => {
     link.addEventListener("click", () => {
       document.getElementById("sidebar-active").checked = false;

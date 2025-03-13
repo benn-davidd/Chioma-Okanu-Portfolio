@@ -26,58 +26,39 @@
 
   <body>
     <!-- NAV SECTION -->
-    <nav id="desktop-nav">
-      <div class="logo">Chioma<span class="logo-dot">.</span></div>
-      <div class="nav-links-container">
+    <header id="home">
+      <nav id="navbar" class="desktop-nav">
+        <div class="logo">Chioma<span class="logo-dot">.</span></div>
         <ul class="nav-links">
           <li><a href="#about" class="active-link">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Chioma<span class="logo-dot">.</span></div>
-      <div class="hamburger-menu">
-        <input type="checkbox" id="sidebar-active" />
-        <label for="sidebar-active" class="open-sidebar-button">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="bars">
-            <path
-              fill="#111111"
-              d="M3,8H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,8Zm18,8H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-5H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"
-            ></path>
-          </svg>
-        </label>
-
-        <label id="overlay" for="sidebar-active"></label>
-
-        <div class="menu-links">
-          <label for="sidebar-active" class="close-sidebar-button">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 32 32"
-              id="multiply"
-            >
-              <path
-                fill="#111111"
-                d="M13.41,12l6.3-6.29a1,1,0,1,0-1.42-1.42L12,10.59,5.71,4.29A1,1,0,0,0,4.29,5.71L10.59,12l-6.3,6.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l6.29,6.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z"
-              ></path>
-            </svg>
+        <div class="hamburger-menu">
+          <input type="checkbox" id="sidebar-active" />
+          <label for="sidebar-active" class="open-sidebar-button">
+            <i class="fa-solid fa-bars hamburger"></i>
           </label>
 
-          <a class="menu-items" href="#hamburger-nav" onclick="toggleMenu()"
-            >Home</a
-          >
-          <a class="menu-items" href="#about" onclick="toggleMenu()">About</a>
-          <a class="menu-items" href="#projects" onclick="toggleMenu()"
-            >Projects</a
-          >
-          <a class="menu-items" href="#contact" onclick="toggleMenu()"
-            >Contact</a
-          >
+          <label id="overlay" for="sidebar-active"></label>
+
+          <div class="menu-links">
+            <label for="sidebar-active" class="close-sidebar-button">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+
+            <a class="menu-items" href="#home" onclick="toggleMenu()">Home</a>
+            <a class="menu-items" href="#about" onclick="toggleMenu()">About</a>
+            <a class="menu-items" href="#projects" onclick="toggleMenu()"
+              >Projects</a
+            >
+            <a class="menu-items" href="#contact" onclick="toggleMenu()"
+              >Contact</a
+            >
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <!-- PROFILE SECTION -->
     <section id="profile">
       <div class="section-container">
@@ -196,7 +177,7 @@
                 <i class="fa-solid fa-location-dot"></i>
               </div>
               <h4>Location</h4>
-              <p>London, United Kingdom</p>
+              <p>London, UK</p>
             </div>
             <div class="contact-info-card email">
               <div class="icon-wrapper">
@@ -238,7 +219,7 @@
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="linkedin"
+                  class="spotify"
                 >
                   <i class="fa-brands fa-spotify"></i>
                 </a>
@@ -246,15 +227,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="contact-left">
-              <p><i class="fa-solid fa-envelope"></i> chiomaokanu2002@gmail.com</p>
-              <p><i class="fa-solid fa-phone"></i> +44 7450739825</p>
-              <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
-              </div>
-            </div> -->
-
         <div class="col contact-right">
           <div class="form-header">
             <h4>Send Me a Message</h4>
@@ -304,10 +276,10 @@
     <!-- FOOTER -->
     <footer class="footer pt-3 mt-4">
       <ul
-        class="footer-links nav justify-content-center border-bottom pb-3 mb-3"
+        class="footer-links nav justify-c.ntent-center border-bottom pb-3 mb-3"
       >
         <li class="nav-item">
-          <a href="#desktop-nav" class="nav-link px-2 text-black">Home</a>
+          <a href="#home" class="nav-link px-2 text-black">Home</a>
         </li>
         <li class="nav-item">
           <a href="#about" class="nav-link px-2 text-black">About</a>
