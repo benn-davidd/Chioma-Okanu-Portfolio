@@ -122,13 +122,13 @@ nav {
 
   position: fixed;
   top: 0;
-  right: -200%;
+  right: -100%;
   z-index: 10;
   width: 40%;
 
   background: #89a8b2;
   box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
-  transition: 0.3s ease-out;
+  transition: 0.3s ease-in-out;
 }
 
 .menu-links a {

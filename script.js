@@ -1,13 +1,14 @@
-function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
+document.addEventListener("DOMContentLoaded", function toggleMenu() {
+  // const menu = document.querySelector(".menu-links");
   const menuItems = document.querySelectorAll(".menu-items");
-  const icon = document.querySelector(".hamburger");
-  document.querySelectorAll(".menu-links a").forEach((link) => {
-    link.addEventListener("click", () => {
-      document.getElementById("sidebar-active").checked = false;
+  // const icon = document.querySelector(".hamburger");
+  const menuCheckbox = document.getElementById("sidebar-active");
+  menuItems.forEach((link) => {
+    link.addEventListener("click", function () {
+      menuCheckbox.checked = false;
     });
   });
-}
+});
 
 /* -- SCROLL REVEAL ANIMATION -- */
 const sr = ScrollReveal({
