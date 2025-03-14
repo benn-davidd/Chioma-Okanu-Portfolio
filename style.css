@@ -564,7 +564,7 @@ section {
 
 .btn.btn2:hover {
   transform: scale(1.02);
-  background: black;
+  background: linear-gradient(180deg, #000000, #1a1a1a, #333333);
   color: white;
 }
 
