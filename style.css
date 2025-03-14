@@ -149,7 +149,7 @@ nav {
 .menu-links a:hover {
   color: black;
   text-decoration: none;
-  background: #e5e1da;
+  background: radial-gradient(circle, #e5e1da, rgba(255, 255, 255, 0.6));
 }
 
 #sidebar-active {
@@ -450,7 +450,7 @@ section {
 
 /* CONTACT SECTION */
 #contact {
-  height: fit-content;
+  height: 100vh;
   justify-items: center;
   gap: 2rem;
   padding: 30px 0;
@@ -479,7 +479,7 @@ section {
   justify-items: center;
   box-shadow: 1px 5px 8px 2px grey;
   transition: transform 0.3s ease-in-out;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .contact-info-card:hover {
@@ -519,7 +519,7 @@ section {
 }
 
 .icon-wrapper {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 50px;

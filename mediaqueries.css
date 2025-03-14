@@ -299,6 +299,10 @@
     padding: 30px 1px;
   }
 
+  #contact .row {
+    justify-items: center;
+  }
+
   .contact-left p,
   .contact-left a {
     font-size: small;
