@@ -295,8 +295,9 @@
 
   /* CONTACT SECTION */
   #contact {
-    justify-items: center !important;
+    justify-items: center;
     padding: 30px 1px;
+    margin: 0 auto;
   }
 
   #contact .row {

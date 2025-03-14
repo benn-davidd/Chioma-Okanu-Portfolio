@@ -452,8 +452,10 @@ section {
 #contact {
   height: 100vh;
   justify-items: center;
+  align-content: center;
   gap: 2rem;
   padding: 30px 0;
+  margin: 0 2rem;
 }
 
 .contact-left {
