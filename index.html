@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1.0"
+    />
     <title>Chioma's Portfolio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -177,14 +180,7 @@
                 <i class="fa-solid fa-location-dot"></i>
               </div>
               <h4>Location</h4>
-              <p>London, UK</p>
-            </div>
-            <div class="contact-info-card email">
-              <div class="icon-wrapper">
-                <i class="fa-solid fa-envelope"></i>
-              </div>
-              <h4>Gmail</h4>
-              <a href="mailto:chiomaokanu2002@gmail.com">chiomaokanu2002</a>
+              <p>London, United Kingdom</p>
             </div>
             <div class="contact-info-card phone">
               <div class="icon-wrapper">
@@ -193,43 +189,40 @@
               <h4>Phone</h4>
               <a href="tel:+447958065301">+44 7958065301</a>
             </div>
-            <div class="contact-info-card social">
-              <div class="icon-wrapper">
-                <i class="fa-solid fa-share-nodes"></i>
-              </div>
-              <h4>Socials</h4>
-              <div class="social-icons">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="linkedin"
-                >
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="instagram"
-                >
-                  <i class="fa-brands fa-square-instagram"></i>
-                </a>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="spotify"
-                >
-                  <i class="fa-brands fa-spotify"></i>
-                </a>
-              </div>
+            <div class="social-icons">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="linkedin"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="instagram"
+              >
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="spotify"
+              >
+                <i class="fa-brands fa-spotify"></i>
+              </a>
             </div>
           </div>
         </div>
         <div class="col contact-right">
           <div class="form-header">
             <h4>Send Me a Message</h4>
+            <a href="mailto:chiomaokanu2002@gmail.com"
+              >chiomaokanu2002@gmail.com</a
+            >
           </div>
           <form class="contact-form">
             <div class="form-group mb-4">
@@ -237,16 +230,18 @@
                 <input
                   type="text"
                   name="fullname"
-                  placeholder="Your Name"
+                  placeholder="Your Name*"
                   class="form-control"
+                  required
                 />
               </div>
               <div class="input-group">
                 <input
                   type="email"
                   name="email"
-                  placeholder="Your Email"
+                  placeholder="Your Email*"
                   class="form-control"
+                  required
                 />
               </div>
             </div>
@@ -262,12 +257,13 @@
               <textarea
                 name="message"
                 rows="5"
-                placeholder="Your Message"
+                placeholder="Your Message*"
                 class="form-control"
+                required
               ></textarea>
             </div>
             <button type="submit" class="btn btn2">
-              <i class="bi bi-send"></i>Submit
+              <i class="fa-solid fa-paper-plane"></i> Submit
             </button>
           </form>
         </div>

@@ -197,8 +197,8 @@ section {
 
 .section__pic-container {
   display: flex;
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
   margin: auto 50px;
 }
 
@@ -457,9 +457,10 @@ section {
 .contact-info {
   display: grid;
   grid-template-columns: repeat(2, minmax(100px, 1fr));
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.5fr 0.3fr;
   gap: 1rem;
   height: 100%;
+  align-content: flex-end;
 }
 
 .contact-info-card {
@@ -499,8 +500,14 @@ section {
   flex-direction: column;
 }
 
-.contact-right h4 {
+.form-header {
   text-align: center;
+}
+
+.form-header a {
+  text-decoration: none;
+  color: rgb(53, 53, 53);
+  font-size: medium;
 }
 
 .icon-wrapper {
@@ -517,14 +524,18 @@ section {
 
 .social-icons {
   margin-top: 10px;
+  text-align: center;
+  align-content: center;
+  grid-column: span 2;
 }
 
 .social-icons a {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 4rem;
   color: rgb(53, 53, 53);
   display: inline-block;
   transition: transform 0.5s;
+  margin: 0.5rem;
 }
 
 .social-icons a:hover {
@@ -534,12 +545,17 @@ section {
 
 .btn.btn2 {
   display: inline-block;
+  width: 100%;
+  padding: 14px 40px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
   background: rgb(53, 53, 53);
   transition: transform 0.3s ease-out;
 }
 
 .btn.btn2:hover {
-  transform: scale(1.06);
+  transform: scale(1.02);
   background: black;
   color: white;
 }
@@ -558,13 +574,6 @@ section {
   font-size: 15px;
   border-radius: 6px;
   resize: none;
-}
-
-div .btn2 {
-  padding: 14px 40px;
-  font-size: 16px;
-  margin-top: 10px;
-  cursor: pointer;
 }
 
 div .section__text__p1 {
