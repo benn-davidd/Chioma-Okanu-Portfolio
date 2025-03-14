@@ -327,7 +327,7 @@ section {
   align-items: center;
   padding-block: 30px;
   padding-inline: 20px;
-  background: #e5e1da;
+  background: radial-gradient(circle, #e5e1da, rgba(255, 255, 255, 0.6));
   box-shadow: 1px 8px 10px 2px grey;
   border-radius: 20px;
   box-sizing: border-box;
@@ -575,7 +575,7 @@ section {
 
 .form-control {
   outline: none;
-  background: #e5e1da;
+  background: radial-gradient(circle, #e5e1da, rgba(255, 255, 255, 0.6));
   padding: 10px;
   margin: 10px 0;
   color: black;
