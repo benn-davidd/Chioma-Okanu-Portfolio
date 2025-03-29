@@ -479,7 +479,7 @@ section {
   align-content: center;
   gap: 2rem;
   padding: 30px 20px;
-  margin: 0 2rem 0 2rem;
+  margin: 0;
 }
 
 #contact .row {
@@ -500,12 +500,14 @@ section {
 }
 
 .contact-info-card {
+  display: flex;
+  flex-direction: column;
   border-radius: 5px;
   background: radial-gradient(circle, #a3c0ca 0%, #89a8b2 50%, #6f8e98 100%);
   padding: 15px;
   text-align: center;
-  align-content: center;
-  justify-items: center;
+  align-items: center;
+  justify-content: center;
   box-shadow: 1px 5px 8px 2px grey;
   transition: transform 0.3s ease-in-out;
   box-sizing: border-box;

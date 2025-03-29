@@ -117,10 +117,6 @@
     gap: 2rem;
   }
 
-  .contact-info-card {
-    align-content: start;
-  }
-
   .social-icons a {
     font-size: 3.5rem;
   }
@@ -183,10 +179,6 @@
   /* CONTACT SECTION */
   .contact-left p {
     font-size: medium;
-  }
-
-  .contact-info-card {
-    align-content: center;
   }
 
   form .btn2 {
