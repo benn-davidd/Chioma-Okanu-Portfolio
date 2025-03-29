@@ -97,13 +97,14 @@
     height: 110%;
   }
 
-  .layer a {
-    font-size: 40px;
-  }
-
   .projects-list {
     margin: 1rem 0 0;
     grid-gap: 1rem;
+  }
+
+  .btn-link,
+  .btn-link a {
+    font-size: 3rem;
   }
 
   /* CONTACT SECTION */
@@ -172,6 +173,11 @@
     margin: 1rem 2rem 0;
     grid-gap: 1.5rem;
     justify-items: center;
+  }
+
+  .btn-link,
+  .btn-link a {
+    font-size: 3rem;
   }
 
   /* CONTACT SECTION */
@@ -285,19 +291,19 @@
     font-size: large;
   }
 
-  .layer a {
-    margin-top: 5px;
-    font-size: 1.5rem;
-    width: 3rem;
-    height: 3rem;
-    line-height: 3rem;
+  .btn-link,
+  .btn-link a {
+    font-size: 2.5rem;
   }
+
+  /* .projects:hover img {
+    transform: none;
+  } */
 
   /* CONTACT SECTION */
   #contact {
     justify-items: center;
-    padding: 30px 1px;
-    margin: 0 auto;
+    margin: auto;
   }
 
   #contact .row {
@@ -322,7 +328,7 @@
   }
 
   .contact-info-card {
-    align-content: start;
+    align-content: center;
   }
 
   .contact-info-card:hover {

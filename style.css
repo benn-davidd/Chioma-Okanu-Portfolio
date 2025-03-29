@@ -13,6 +13,11 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
   max-width: 100%;
   overflow: hidden;
+  padding: 0;
+}
+
+body.modal-open {
+  padding-right: 0 !important;
 }
 
 html {
@@ -195,6 +200,7 @@ section {
 #profile {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 100vh;
   background: radial-gradient(circle, #e5e1da, rgba(255, 255, 255, 0.6));
   backdrop-filter: blur(10px);
@@ -428,16 +434,8 @@ section {
 }
 
 .layer a {
-  margin-top: 20px;
-  color: #33697b;
   text-decoration: none;
-  font-size: 30px;
-  line-height: 60px;
-  background: white;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  text-align: center;
+  color: white;
 }
 
 .projects:hover img {
@@ -446,6 +444,17 @@ section {
 
 .projects:hover .layer {
   height: 100%;
+}
+
+.btn-link,
+.btn-link a {
+  border: none;
+  font-size: 3rem;
+}
+
+.btn-link:hover,
+.btn-link a:hover {
+  color: #6f8e98;
 }
 
 /* CONTACT SECTION */
@@ -473,7 +482,6 @@ section {
 
 .contact-info-card {
   border-radius: 5px;
-  /* background: #89a8b2; */
   background: radial-gradient(circle, #a3c0ca 0%, #89a8b2 50%, #6f8e98 100%);
   padding: 15px;
   text-align: center;
@@ -481,7 +489,7 @@ section {
   justify-items: center;
   box-shadow: 1px 5px 8px 2px grey;
   transition: transform 0.3s ease-in-out;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 .contact-info-card:hover {
