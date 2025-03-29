@@ -57,3 +57,48 @@ const srRight = ScrollReveal({
 
 srRight.reveal(".skills-box", { delay: 100 });
 srRight.reveal(".contact-right", { delay: 100 });
+
+
+// using EmailJS api create an account here: https://www.emailjs.com
+emailjs.init("YOUR_USER_ID");
+
+document.addEventListener("DOMContentLoaded", function () {
+  const contactForm = document.querySelector(".contact-form");
+
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+
+    // take the data from your html for emailing
+    const formValues = {
+      fullname: formData.get("fullname"),
+      email: formData.get("email"),
+      subject: formData.get("subject"),
+      message: formData.get("message"),
+    };
+
+    // Form validation
+    const name = formValues.fullname;
+    const email = formValues.email;
+    const message = formValues.message;
+
+    if (!name || !email || !message) {
+      alert("Please fill in all required fields.");
+      return;
+    }
+
+    // get your service_id and template-id from your emailJs
+    emailjs
+      .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formValues)
+      .then(
+        function (response) {
+          alert("Message sent successfully!");
+          contactForm.reset();
+        },
+        function (error) {
+          alert("Error sending message: " + error);
+        }
+      );
+  });
+});
