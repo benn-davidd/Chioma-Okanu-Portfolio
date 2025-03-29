@@ -456,6 +456,22 @@ section {
   color: #6f8e98;
 }
 
+.modal-header,
+.modal-footer {
+  background: #6f8e98;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+  background-blend-mode: overlay;
+}
+
+.modal-body {
+  background-color: #b0c4ca;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+}
+
+.modal-body a {
+  color: black;
+}
+
 /* CONTACT SECTION */
 #contact {
   height: 100vh;

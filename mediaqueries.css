@@ -304,7 +304,8 @@
   #contact {
     justify-items: center;
     margin: auto;
-    padding: 0 0 10px 0;
+    padding: 0;
+    max-width: 95%;
   }
 
   #contact .row {
