@@ -296,7 +296,7 @@
   #contact {
     justify-items: center;
     margin: auto;
-    padding: 0;
+    padding: 0 0 20px 0;
     max-width: 95%;
   }
 
@@ -319,6 +319,10 @@
     padding: 14px 20px;
     font-size: 12px;
     cursor: pointer;
+  }
+
+  .contact-info-card {
+    justify-content: start;
   }
 
   .contact-info-card:hover {
