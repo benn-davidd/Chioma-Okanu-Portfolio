@@ -186,7 +186,7 @@
   }
 
   .contact-info-card {
-    align-content: start;
+    align-content: center;
   }
 
   form .btn2 {
@@ -326,11 +326,6 @@
     padding: 14px 20px;
     font-size: 12px;
     cursor: pointer;
-  }
-
-  .contact-info-card {
-    align-content: center;
-    justify-items: center;
   }
 
   .contact-info-card:hover {
