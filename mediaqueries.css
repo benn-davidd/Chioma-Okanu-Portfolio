@@ -330,6 +330,7 @@
 
   .contact-info-card {
     align-content: center;
+    justify-items: center;
   }
 
   .contact-info-card:hover {
