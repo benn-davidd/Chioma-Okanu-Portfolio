@@ -120,6 +120,10 @@
   .social-icons a {
     font-size: 3.5rem;
   }
+
+  .contact-info-card {
+    justify-content: start;
+  }
 }
 
 @media only screen and (max-width: 654px) {
@@ -190,6 +194,10 @@
 
   .social-icons a {
     font-size: 3rem;
+  }
+
+  .contact-info-card {
+    justify-content: start;
   }
 }
 
@@ -284,7 +292,7 @@
   #contact {
     justify-items: center;
     margin: auto;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 15px;
     max-width: 95%;
   }
 
