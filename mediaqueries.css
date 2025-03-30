@@ -284,8 +284,8 @@
   #contact {
     justify-items: center;
     margin: auto;
-    padding: 0 0 0 40px;
-    max-width: 90%;
+    padding: 0 0 0 20px;
+    max-width: 95%;
   }
 
   #contact .row {
@@ -319,6 +319,11 @@
 
   .social-icons a {
     font-size: 2.5rem;
+  }
+
+  .form-group {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   /* FOOTER SECTION */
