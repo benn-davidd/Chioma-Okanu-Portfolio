@@ -215,13 +215,13 @@
     font-size-adjust: 0.5;
   }
 
-  .open-sidebar-button {
+  /* .open-sidebar-button {
     font-size: 15px;
   }
 
   .close-sidebar-button {
     font-size: 15px;
-  }
+  } */
 
   /* PROFILE SECTION */
   #profile {
@@ -292,8 +292,8 @@
   #contact {
     justify-items: center;
     margin: auto;
-    padding: 0 0 0 20px;
-    max-width: 92%;
+    padding: 0 0 0 40px;
+    max-width: 90%;
   }
 
   #contact .row {
