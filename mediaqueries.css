@@ -291,12 +291,12 @@
   /* CONTACT SECTION */
   #contact {
     justify-items: center;
-    margin: 0 0 0 20px;
-    max-width: 95%;
+    max-width: 100%;
   }
 
   #contact .row {
-    justify-items: center;
+    justify-content: center;
+    margin: 0 0 0;
   }
 
   .contact-left p,
