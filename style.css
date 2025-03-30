@@ -9,7 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #b0c4ca;
+  background-color: #6f878e;
   background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
   max-width: 100%;
   overflow: hidden;
@@ -71,7 +71,7 @@ nav {
   align-items: center;
   height: 10vh;
   /* background-color: #89a8b2; */
-  background: #6f8e98;
+  background: #456670;
   background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
   background-blend-mode: overlay;
 }
@@ -89,11 +89,12 @@ nav {
   font-size: 1.2rem;
   float: right;
   margin: 0;
+  font-weight: 500;
 }
 
 .desktop-nav a,
 .footer a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -101,7 +102,7 @@ nav {
 .footer a:hover {
   color: white;
   text-decoration: none;
-  text-underline-offset: 1rem;
+  text-underline-offset: 0.5rem;
 }
 
 .logo {
@@ -135,7 +136,7 @@ nav {
   z-index: 10;
   width: 50%;
 
-  background: #6f8e98;
+  background: #456670;
   background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
   background-blend-mode: overlay;
   box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
@@ -143,11 +144,11 @@ nav {
 }
 
 .menu-links a {
-  color: black;
+  color: white;
   text-decoration: none;
   width: 100%;
   padding: 20px;
-  font-weight: 500;
+  font-weight: 600;
   box-sizing: border-box;
 }
 
@@ -155,6 +156,7 @@ nav {
   color: black;
   text-decoration: none;
   background: radial-gradient(circle, #e5e1da, rgba(255, 255, 255, 0.6));
+  transition: 0.4s ease-in-out;
 }
 
 #sidebar-active {
@@ -172,11 +174,11 @@ nav {
 }
 
 .open-sidebar-button {
-  font-size: 20px;
+  font-size: 2.5vw;
 }
 
 .close-sidebar-button {
-  font-size: 20px;
+  font-size: 2.5vw;
 }
 
 /* SECTIONS */
@@ -366,7 +368,7 @@ section {
 
 .skills-list span {
   font-size: 16px;
-  background: #33697b;
+  background: #2e5561;
   color: white;
   padding: 4px 10px;
   border-radius: 5px;
@@ -503,12 +505,12 @@ section {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  background: radial-gradient(circle, #a3c0ca 0%, #89a8b2 50%, #6f8e98 100%);
+  background: radial-gradient(circle, #a3c0ca 5%, #89a8b2 25%, #2e5561 100%);
   padding: 15px;
   text-align: center;
   align-items: center;
   justify-content: center;
-  box-shadow: 1px 5px 8px 2px grey;
+  box-shadow: 1px 4px 6px 2px grey;
   transition: transform 0.3s ease-in-out;
   box-sizing: border-box;
 }
@@ -634,8 +636,9 @@ footer {
   gap: 3rem;
   list-style: none;
   font-size: 1.2rem;
+  font-weight: 500;
 }
 
-.nav-item a:hover {
+.footer-links a:hover {
   color: white !important;
 }
