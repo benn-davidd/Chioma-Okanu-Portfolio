@@ -506,7 +506,7 @@ section {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  color: white;
+  color: #e5e1da;
   background: #2e5561;
   /* background: radial-gradient(circle, #a3c0ca 5%, #89a8b2 25%, #2e5561 100%); */
   padding: 15px;
@@ -524,13 +524,13 @@ section {
 
 .contact-left p {
   font-size: 15px;
-  color: white;
+  color: #e5e1da;
 }
 
 .contact-left a {
   font-size: 15px;
   text-decoration: none;
-  color: white;
+  color: #e5e1da;
 }
 
 .contact-left p i {
