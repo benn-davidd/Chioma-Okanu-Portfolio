@@ -624,6 +624,13 @@ div .section__text__p1 {
   margin-bottom: 0;
 }
 
+.badge {
+  font-size: 2rem;
+  color: #e5e1da;
+  top: 10%;
+  left: 85%;
+}
+
 /* FOOTER SECTION */
 
 footer {
