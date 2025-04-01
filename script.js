@@ -58,12 +58,17 @@ const srRight = ScrollReveal({
 srRight.reveal(".skills-box", { delay: 100 });
 srRight.reveal(".contact-right", { delay: 100 });
 
-
 // using EmailJS api create an account here: https://www.emailjs.com
-emailjs.init("YOUR_USER_ID");
+emailjs.init("Ej8Cm6Sty2n1ug-7B");
 
 document.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("Ej8Cm6Sty2n1ug-7B");
   const contactForm = document.querySelector(".contact-form");
+
+  if (!contactForm) {
+    console.error("Error: Contact form not found!");
+    return;
+  }
 
   contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -72,32 +77,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // take the data from your html for emailing
     const formValues = {
-      fullname: formData.get("fullname"),
-      email: formData.get("email"),
-      subject: formData.get("subject"),
+      from_name: formData.get("fullname"),
+      from_email: formData.get("email"),
+      email_subject: formData.get("subject"),
       message: formData.get("message"),
     };
 
-    // Form validation
-    const name = formValues.fullname;
-    const email = formValues.email;
-    const message = formValues.message;
+    console.log("Form values being sent:", formValues);
 
-    if (!name || !email || !message) {
+    // Form validation
+    // const name = formValues.from_name;
+    // const email = formValues.from_email;
+    // const message = formValues.message;
+
+    if (
+      !formValues.from_name ||
+      !formValues.from_email ||
+      !formValues.message
+    ) {
       alert("Please fill in all required fields.");
       return;
     }
 
-    // get your service_id and template-id from your emailJs
+    // service_id and template-id from your emailJs
     emailjs
-      .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formValues)
+      .send(
+        "service_rojau1n",
+        "template_8ddme6t",
+        formValues,
+        "Ej8Cm6Sty2n1ug-7B"
+      )
       .then(
         function (response) {
-          alert("Message sent successfully!");
+          alert("Email sent successfully!");
+          console.log("Email sent successfully!", response);
           contactForm.reset();
         },
         function (error) {
-          alert("Error sending message: " + error);
+          alert("Error sending message: " + JSON.stringify(error));
+          console.error("Error sending message: ", error);
         }
       );
   });
