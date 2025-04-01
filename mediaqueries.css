@@ -229,6 +229,10 @@
     align-content: center;
   }
 
+  .section-container {
+    margin-bottom: 2.5rem;
+  }
+
   .btn {
     font-size: 12px;
   }
