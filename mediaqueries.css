@@ -227,10 +227,7 @@
   #profile {
     font-size-adjust: 0.5;
     align-content: center;
-  }
-
-  .section-container {
-    margin-bottom: 2.5rem;
+    height: 90vh;
   }
 
   .btn {
