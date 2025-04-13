@@ -1,21 +1,21 @@
 document.addEventListener("DOMContentLoaded", function toggleMenu() {
-  // const menu = document.querySelector(".menu-links");
-  const menuItems = document.querySelectorAll(".menu-items");
-  // const icon = document.querySelector(".hamburger");
-  const menuCheckbox = document.getElementById("sidebar-active");
-  menuItems.forEach((link) => {
-    link.addEventListener("click", function () {
-      menuCheckbox.checked = false;
-    });
-  });
+	// const menu = document.querySelector(".menu-links");
+	const menuItems = document.querySelectorAll(".menu-items");
+	// const icon = document.querySelector(".hamburger");
+	const menuCheckbox = document.getElementById("sidebar-active");
+	menuItems.forEach((link) => {
+		link.addEventListener("click", function () {
+			menuCheckbox.checked = false;
+		});
+	});
 });
 
 /* -- SCROLL REVEAL ANIMATION -- */
 const sr = ScrollReveal({
-  origin: "top",
-  distance: "80px",
-  duration: 2000,
-  reset: false,
+	origin: "top",
+	distance: "80px",
+	duration: 2000,
+	reset: false,
 });
 
 /* -- PROJECT BOX -- */
@@ -27,10 +27,10 @@ sr.reveal(".title", {});
 
 /* -- PROJECTS -- */
 const srBottom = ScrollReveal({
-  origin: "bottom",
-  distance: "80px",
-  duration: 2000,
-  reset: false,
+	origin: "bottom",
+	distance: "80px",
+	duration: 2000,
+	reset: false,
 });
 
 sr.reveal(".projects", {});
@@ -38,10 +38,10 @@ sr.reveal(".projects", {});
 /* ----- ## -- SCROLL REVEAL LEFT_RIGHT ANIMATION -- ## ----- */
 /* -- ABOUT INFO & CONTACT INFO -- */
 const srLeft = ScrollReveal({
-  origin: "left",
-  distance: "80px",
-  duration: 2000,
-  reset: false,
+	origin: "left",
+	distance: "80px",
+	duration: 2000,
+	reset: false,
 });
 
 srLeft.reveal(".about-info", { delay: 100 });
@@ -49,10 +49,10 @@ srLeft.reveal(".contact-left", { delay: 100 });
 
 /* -- ABOUT SKILLS & FORM BOX -- */
 const srRight = ScrollReveal({
-  origin: "right",
-  distance: "80px",
-  duration: 2000,
-  reset: false,
+	origin: "right",
+	distance: "80px",
+	duration: 2000,
+	reset: false,
 });
 
 srRight.reveal(".skills-box", { delay: 100 });
@@ -62,61 +62,61 @@ srRight.reveal(".contact-right", { delay: 100 });
 emailjs.init("Ej8Cm6Sty2n1ug-7B");
 
 document.addEventListener("DOMContentLoaded", function () {
-  emailjs.init("Ej8Cm6Sty2n1ug-7B");
-  const contactForm = document.querySelector(".contact-form");
+	emailjs.init("Ej8Cm6Sty2n1ug-7B");
+	const contactForm = document.querySelector(".contact-form");
 
-  if (!contactForm) {
-    console.error("Error: Contact form not found!");
-    return;
-  }
+	if (!contactForm) {
+		console.error("Error: Contact form not found!");
+		return;
+	}
 
-  contactForm.addEventListener("submit", function (event) {
-    event.preventDefault();
+	contactForm.addEventListener("submit", function (event) {
+		event.preventDefault();
 
-    const formData = new FormData(contactForm);
+		const formData = new FormData(contactForm);
 
-    // take the data from your html for emailing
-    const formValues = {
-      from_name: formData.get("fullname"),
-      from_email: formData.get("email"),
-      email_subject: formData.get("subject"),
-      message: formData.get("message"),
-    };
+		// take the data from your html for emailing
+		const formValues = {
+			from_name: formData.get("fullname"),
+			from_email: formData.get("email"),
+			email_subject: formData.get("subject"),
+			message: formData.get("message"),
+		};
 
-    console.log("Form values being sent:", formValues);
+		console.log("Form values being sent:", formValues);
 
-    // Form validation
-    // const name = formValues.from_name;
-    // const email = formValues.from_email;
-    // const message = formValues.message;
+		// Form validation
+		// const name = formValues.from_name;
+		// const email = formValues.from_email;
+		// const message = formValues.message;
 
-    if (
-      !formValues.from_name ||
-      !formValues.from_email ||
-      !formValues.message
-    ) {
-      alert("Please fill in all required fields.");
-      return;
-    }
+		if (
+			!formValues.from_name ||
+			!formValues.from_email ||
+			!formValues.message
+		) {
+			alert("Please fill in all required fields.");
+			return;
+		}
 
-    // service_id and template-id from your emailJs
-    emailjs
-      .send(
-        "service_rojau1n",
-        "template_8ddme6t",
-        formValues,
-        "Ej8Cm6Sty2n1ug-7B"
-      )
-      .then(
-        function (response) {
-          alert("Email sent successfully!");
-          console.log("Email sent successfully!", response);
-          contactForm.reset();
-        },
-        function (error) {
-          alert("Error sending message: " + JSON.stringify(error));
-          console.error("Error sending message: ", error);
-        }
-      );
-  });
+		// service_id and template-id from your emailJs
+		emailjs
+			.send(
+				"service_rojau1n",
+				"template_8ddme6t",
+				formValues,
+				"Ej8Cm6Sty2n1ug-7B"
+			)
+			.then(
+				function (response) {
+					alert("Email sent successfully!");
+					console.log("Email sent successfully!", response);
+					contactForm.reset();
+				},
+				function (error) {
+					alert("Error sending message: " + JSON.stringify(error));
+					console.error("Error sending message: ", error);
+				}
+			);
+	});
 });

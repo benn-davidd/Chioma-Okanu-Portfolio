@@ -1,479 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0 maximum-scale=1.0"
-    />
-    <title>Chioma's Portfolio</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
-    />
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/bcb5ef96de.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0 maximum-scale=1.0"
+		/>
+		<title>Chioma's Portfolio</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+		/>
+		<link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="mediaqueries.css" />
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+		></script>
+		<script
+			src="https://kit.fontawesome.com/bcb5ef96de.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://unpkg.com/scrollreveal"></script>
+	</head>
 
-  <body>
-    <!-- NAV SECTION -->
-    <header id="home">
-      <nav id="navbar" class="desktop-nav">
-        <div class="logo">Chioma<span class="logo-dot">.</span></div>
-        <ul class="nav-links">
-          <li><a href="#about" class="active-link">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger-menu">
-          <input type="checkbox" id="sidebar-active" />
-          <label for="sidebar-active" class="open-sidebar-button">
-            <i class="fa-solid fa-bars hamburger"></i>
-          </label>
+	<body>
+		<!-- NAV SECTION -->
+		<header id="home">
+			<nav id="navbar" class="desktop-nav">
+				<div class="logo">Chioma<span class="logo-dot">.</span></div>
+				<ul class="nav-links">
+					<li><a href="#about" class="active-link">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<div class="hamburger-menu">
+					<input type="checkbox" id="sidebar-active" />
+					<label for="sidebar-active" class="open-sidebar-button">
+						<i class="fa-solid fa-bars hamburger"></i>
+					</label>
 
-          <label id="overlay" for="sidebar-active"></label>
+					<label id="overlay" for="sidebar-active"></label>
 
-          <div class="menu-links">
-            <label for="sidebar-active" class="close-sidebar-button">
-              <i class="fa-solid fa-xmark"></i>
-            </label>
+					<div class="menu-links">
+						<label for="sidebar-active" class="close-sidebar-button">
+							<i class="fa-solid fa-xmark"></i>
+						</label>
 
-            <a class="menu-items" href="#home" onclick="toggleMenu()">Home</a>
-            <a class="menu-items" href="#about" onclick="toggleMenu()">About</a>
-            <a class="menu-items" href="#projects" onclick="toggleMenu()"
-              >Projects</a
-            >
-            <a class="menu-items" href="#contact" onclick="toggleMenu()"
-              >Contact</a
-            >
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- PROFILE SECTION -->
-    <section id="profile">
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img src="./assets/profile.png" alt="Chioma Okanu profile picture" />
-        </div>
-        <div class="section__text">
-          <p class="section__main__text__p1">Hello, I'm</p>
-          <h1 class="main-title">Chioma Okanu</h1>
-          <p class="section__text__p2">Strategy Consultant</p>
-          <div class="btn-container">
-            <button class="btn btn-color-1" onclick="window.open('')">
-              Download CV
-            </button>
-            <button class="btn btn-color-2" onclick="location.href='#contact'">
-              Contact Me
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ABOUT SECTION -->
-    <section id="about">
-      <p class="section__text__p1">Get to Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="row">
-        <div class="col about-info col-sm-12 col-lg-6">
-          <h3>My Introduction</h3>
-          <p>
-            I am a strategy consultant dedicated to helping businesses,
-            organizations, and governments solve complex challenges, drive
-            innovation, and achieve sustainable growth. With a sharp analytical
-            approach and deep industry insights, I craft tailored strategies
-            that enhance market positioning, optimize operations, and create
-            lasting impact in an evolving economic and policy landscape
-          </p>
-        </div>
-        <div class="col skills">
-          <div class="skills-box">
-            <div class="skills-header">
-              <h4>Soft Skills</h4>
-            </div>
-            <div class="skills-list">
-              <span>Problem Solving</span>
-              <span>Communication</span>
-              <span>Emotional Intelligence</span>
-              <span>Adaptability</span>
-              <span>Teamwork</span>
-              <span>Time Management</span>
-              <span>Ethical Judgement</span>
-            </div>
-          </div>
-          <div class="skills-box">
-            <div class="skills-header">
-              <h4>Technical Skills</h4>
-            </div>
-            <div class="skills-list">
-              <span>Ms Office</span>
-              <span>Ms Excel (Advanced)</span>
-              <span>Google Docs</span>
-              <span>Google Sheets</span>
-              <span>Tableau</span>
-              <span>SQL</span>
-              <span>Power BI</span>
-              <span>Canva</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- PROJECTS SECTION -->
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="projects-list">
-        <div class="projects project-1">
-          <img src="./assets/project-1.jpg" />
-          <div class="layer">
-            <h3>Case Studies</h3>
-            <!-- Button trigger modal -->
-            <button
-              type="button"
-              class="btn btn-link"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal-1"
-            >
-              <i class="fa-solid fa-square-arrow-up-right"></i>
-            </button>
-          </div>
-        </div>
-        <!-- Modal for Project 1 -->
-        <div
-          class="modal fade"
-          id="exampleModal-1"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div
-            class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-          >
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">
-                  Case Studies
-                </h1>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <br />
-                <a
-                  href="https://docs.google.com/document/d/1sO2zQBZel-82gDFYwY4pE2xIHJosTTGYqIANm3gPWg8/edit?usp=sharing"
-                  target="_blank"
-                  >Telco Case Study: BCG Forage Task<i
-                    class="fa-solid fa-link"
-                  ></i
-                ></a>
-                <br />
-                <br />
-                <br />
-                <a
-                  href="https://1drv.ms/x/c/b184de40e6346187/EXgzUpJYVdBImUz7DhPkaUUB5XmFhYvqRyC9qx-fQrTbgQ?e=4CMk8X"
-                  target="_blank"
-                  >Telco Case Study: BCG Forage Task (Answer)<i
-                    class="fa-solid fa-link"
-                  ></i
-                ></a>
-                <br />
-                <br />
-                <br />
-                <a
-                  href="https://docs.google.com/document/d/16rHQPTU7HxOOSbw8lqjeeU6rlg09LJnq07xV83jTy2g/edit"
-                  target="_blank"
-                  >Experiential Event Strategy to Enhance Customer Retention for
-                  a Consumer Goods Brand<i class="fa-solid fa-link"></i
-                ></a>
-                <br />
-                <br />
-                <br />
-                <a
-                  href="https://docs.google.com/document/d/173Mvq2YW-Fp3-B41hKP99wYUG3mtEx5CyJ9n-JdDZjI/edit"
-                  target="_blank"
-                  >Navigating Currency Devaluation in Nigeria's Consumer Goods
-                  Industry<i class="fa-solid fa-link"></i
-                ></a>
-                <br />
-                <br />
-                <br />
-                <a
-                  href="https://docs.google.com/document/d/17DNSFrfFW1y-Skb-ZZyL33EARkkL9l48zXOIFQd4RaA/edit"
-                  target="_blank"
-                >
-                  Designing a Customer-Centric Operational Strategy to Drive
-                  Revenue and Brand Loyalty for a Boutique Hotel<i
-                    class="fa-solid fa-link"
-                  ></i
-                ></a>
-                <br />
-                <br />
-                <br />
-                <a
-                  href="https://docs.google.com/document/d/17WVU0xho7PXV_Jpuizfzc7p8ctgv6SUxf62ZlF94KSo/edit"
-                  target="_blank"
-                  >Addressing the Skills Gap: Strategies for Workforce
-                  Development in Education<i class="fa-solid fa-link"></i
-                ></a>
-                <br />
-                <br />
-                <br />
-                <a
-                  href="https://docs.google.com/document/d/17rfu3cOap-gHVsDEVdeC7nO3BUBbmkSxuOMHKVHl-xU/edit"
-                  target="_blank"
-                  >Driving the Transition: Strategies for Balancing Growth and
-                  Sustainability in Renewable Energy<i
-                    class="fa-solid fa-link"
-                  ></i
-                ></a>
-                <br />
-                <br />
-                <br />
-                <a
-                  href="https://docs.google.com/document/d/1pex3P_RbQmTpzdS5w5ih6Kji3uT61fTE3OIvVpobmwE/edit?usp=sharing"
-                  target="_blank"
-                  >Other Case Studies<i class="fa-solid fa-link"></i
-                ></a>
-                <br />
-                <br />
-              </div>
-              <div class="modal-footer"><br /></div>
-            </div>
-          </div>
-        </div>
-        <div class="projects project-2">
-          <img src="./assets/project-2.jpg" />
-          <div class="layer">
-            <h3>Articles</h3>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-link">
-              <a href="https://medium.com/@chiomaokanu01" target="_blank"
-                ><i class="fa-solid fa-square-arrow-up-right"></i
-              ></a>
-            </button>
-          </div>
-        </div>
-        <div class="projects project-3">
-          <img src="./assets/project-3.jpg" />
-          <div class="layer">
-            <h3>Data Analysis</h3>
-            <!-- Button trigger modal -->
-            <button
-              type="button"
-              class="btn btn-link"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal-3"
-            >
-              <i class="fa-solid fa-square-arrow-up-right"></i>
-            </button>
-          </div>
-        </div>
-        <!-- Modal for Project 3 -->
-        <div
-          class="modal fade"
-          id="exampleModal-3"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div
-            class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-          >
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">
-                  Data Analysis
-                </h1>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <br />
-                <a
-                  href="https://public.tableau.com/app/profile/chioma5682"
-                  target="_blank"
-                  >Tableau<i class="fa-solid fa-link"></i
-                ></a>
-                <br />
-                <br />
-                <br />
-                <a
-                  href="https://1drv.ms/x/c/b184de40e6346187/ETMnMMYIlWFAlCtlVM6PBOYBekhMF6Nb-cc1XPgX6DUfQg?e=FS4f5s"
-                  target="_blank"
-                  >Data Analysis Project: Sales<i class="fa-solid fa-link"></i
-                ></a>
-                <br />
-                <br />
-                <br />
-                <a
-                  href="https://1drv.ms/x/c/b184de40e6346187/EbTN8VJ3xKhEkgl0BRquLXkBJmNdM4kBkBA_-IMm_QRuzg?e=GzCsQ7"
-                  target="_blank"
-                  >Data Analysis Project: Bike Sales<i
-                    class="fa-solid fa-link"
-                  ></i
-                ></a>
-                <br />
-                <br />
-              </div>
-              <div class="modal-footer"><br /></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="row container">
-        <div class="contact-left col-sm-12 col-lg-5">
-          <div class="contact-info">
-            <div class="contact-info-card">
-              <div class="icon-wrapper">
-                <i class="fa-solid fa-location-dot"></i>
-              </div>
-              <h4>Location</h4>
-              <p>London, United Kingdom</p>
-            </div>
-            <div class="contact-info-card">
-              <div class="icon-wrapper">
-                <i class="fa-solid fa-phone"></i>
-              </div>
-              <h4>Phone</h4>
-              <a href="tel:+447958065301">+44 7958065301</a>
-            </div>
-            <div class="social-icons">
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="linkedin"
-              >
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="instagram"
-              >
-                <i class="fa-brands fa-square-instagram"></i>
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="spotify position-relative d-inlineblock"
-              >
-                <i class="fa-brands fa-spotify"></i>
-                <span class="position-absolute translate-middle badge bg-none">
-                  <i class="fa-solid fa-podcast"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col contact-right">
-          <div class="form-header">
-            <h4>Send Me a Message</h4>
-            <a href="mailto:chiomaokanu2002@gmail.com"
-              >chiomaokanu2002@gmail.com</a
-            >
-          </div>
-          <form method="POST" class="contact-form">
-            <div class="form-group mb-4">
-              <div class="input-group">
-                <input
-                  type="text"
-                  name="fullname"
-                  placeholder="Your Name*"
-                  class="form-control"
-                  required
-                />
-              </div>
-              <div class="input-group">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email*"
-                  class="form-control"
-                  required
-                />
-              </div>
-            </div>
-            <div class="input-group">
-              <input
-                type="text"
-                name="subject"
-                placeholder="Subject (Optional)"
-                class="form-control"
-              />
-            </div>
-            <div class="input-group">
-              <textarea
-                name="message"
-                rows="5"
-                placeholder="Your Message*"
-                class="form-control"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn2">
-              <i class="fa-solid fa-paper-plane"></i> Submit
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
-    <!-- FOOTER -->
-    <footer class="footer pt-3 mt-4">
-      <ul
-        class="footer-links nav justify-c.ntent-center border-bottom pb-3 mb-3"
-      >
-        <li class="nav-item">
-          <a href="#home" class="nav-link px-2 text-black">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#about" class="nav-link px-2 text-black">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="#projects" class="nav-link px-2 text-black">Projects</a>
-        </li>
-      </ul>
+						<a class="menu-items" href="#home" onclick="toggleMenu()">Home</a>
+						<a class="menu-items" href="#about" onclick="toggleMenu()">About</a>
+						<a class="menu-items" href="#projects" onclick="toggleMenu()"
+							>Projects</a
+						>
+						<a class="menu-items" href="#contact" onclick="toggleMenu()"
+							>Contact</a
+						>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- PROFILE SECTION -->
+		<section id="profile">
+			<div class="section-container">
+				<div class="section__pic-container">
+					<img src="./assets/profile.png" alt="Chioma Okanu profile picture" />
+				</div>
+				<div class="section__text">
+					<p class="section__main__text__p1">Hello, I'm</p>
+					<h1 class="main-title">Chioma Okanu</h1>
+					<p class="section__text__p2">Strategy Consultant</p>
+					<div class="btn-container">
+						<button class="btn btn-color-1" onclick="window.open('')">
+							Download CV
+						</button>
+						<button class="btn btn-color-2" onclick="location.href='#contact'">
+							Contact Me
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ABOUT SECTION -->
+		<section id="about">
+			<p class="section__text__p1">Get to Know More</p>
+			<h1 class="title">About Me</h1>
+			<div class="row">
+				<div class="col about-info col-sm-12 col-lg-6">
+					<h3>My Introduction</h3>
+					<p>
+						I am a strategy consultant dedicated to helping businesses,
+						organizations, and governments solve complex challenges, drive
+						innovation, and achieve sustainable growth. With a sharp analytical
+						approach and deep industry insights, I craft tailored strategies
+						that enhance market positioning, optimize operations, and create
+						lasting impact in an evolving economic and policy landscape
+					</p>
+				</div>
+				<div class="col skills">
+					<div class="skills-box">
+						<div class="skills-header">
+							<h4>Soft Skills</h4>
+						</div>
+						<div class="skills-list">
+							<span>Problem Solving</span>
+							<span>Communication</span>
+							<span>Emotional Intelligence</span>
+							<span>Adaptability</span>
+							<span>Teamwork</span>
+							<span>Time Management</span>
+							<span>Ethical Judgement</span>
+						</div>
+					</div>
+					<div class="skills-box">
+						<div class="skills-header">
+							<h4>Technical Skills</h4>
+						</div>
+						<div class="skills-list">
+							<span>Ms Office</span>
+							<span>Ms Excel (Advanced)</span>
+							<span>Google Docs</span>
+							<span>Google Sheets</span>
+							<span>Tableau</span>
+							<span>SQL</span>
+							<span>Power BI</span>
+							<span>Canva</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- PROJECTS SECTION -->
+		<section id="projects">
+			<p class="section__text__p1">Browse My Recent</p>
+			<h1 class="title">Projects</h1>
+			<div class="projects-list">
+				<div class="projects project-1">
+					<img src="./assets/project-1.jpg" />
+					<div class="layer">
+						<h3>Case Studies</h3>
+						<!-- Button trigger modal -->
+						<button
+							type="button"
+							class="btn btn-link"
+							data-bs-toggle="modal"
+							data-bs-target="#exampleModal-1"
+						>
+							<i class="fa-solid fa-square-arrow-up-right"></i>
+						</button>
+					</div>
+				</div>
+				<!-- Modal for Project 1 -->
+				<div
+					class="modal fade"
+					id="exampleModal-1"
+					tabindex="-1"
+					aria-labelledby="exampleModalLabel"
+					aria-hidden="true"
+				>
+					<div
+						class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+					>
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-5" id="exampleModalLabel">
+									Case Studies
+								</h1>
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="modal"
+									aria-label="Close"
+								></button>
+							</div>
+							<div class="modal-body">
+								<br />
+								<a
+									href="https://docs.google.com/document/d/1sO2zQBZel-82gDFYwY4pE2xIHJosTTGYqIANm3gPWg8/edit?usp=sharing"
+									target="_blank"
+									>Telco Case Study: BCG Forage Task<i
+										class="fa-solid fa-link"
+									></i
+								></a>
+								<br />
+								<br />
+								<br />
+								<a
+									href="https://1drv.ms/x/c/b184de40e6346187/EXgzUpJYVdBImUz7DhPkaUUB5XmFhYvqRyC9qx-fQrTbgQ?e=4CMk8X"
+									target="_blank"
+									>Telco Case Study: BCG Forage Task (Answer)<i
+										class="fa-solid fa-link"
+									></i
+								></a>
+								<br />
+								<br />
+								<br />
+								<a
+									href="https://docs.google.com/document/d/16rHQPTU7HxOOSbw8lqjeeU6rlg09LJnq07xV83jTy2g/edit"
+									target="_blank"
+									>Experiential Event Strategy to Enhance Customer Retention for
+									a Consumer Goods Brand<i class="fa-solid fa-link"></i
+								></a>
+								<br />
+								<br />
+								<br />
+								<a
+									href="https://docs.google.com/document/d/173Mvq2YW-Fp3-B41hKP99wYUG3mtEx5CyJ9n-JdDZjI/edit"
+									target="_blank"
+									>Navigating Currency Devaluation in Nigeria's Consumer Goods
+									Industry<i class="fa-solid fa-link"></i
+								></a>
+								<br />
+								<br />
+								<br />
+								<a
+									href="https://docs.google.com/document/d/17DNSFrfFW1y-Skb-ZZyL33EARkkL9l48zXOIFQd4RaA/edit"
+									target="_blank"
+								>
+									Designing a Customer-Centric Operational Strategy to Drive
+									Revenue and Brand Loyalty for a Boutique Hotel<i
+										class="fa-solid fa-link"
+									></i
+								></a>
+								<br />
+								<br />
+								<br />
+								<a
+									href="https://docs.google.com/document/d/17WVU0xho7PXV_Jpuizfzc7p8ctgv6SUxf62ZlF94KSo/edit"
+									target="_blank"
+									>Addressing the Skills Gap: Strategies for Workforce
+									Development in Education<i class="fa-solid fa-link"></i
+								></a>
+								<br />
+								<br />
+								<br />
+								<a
+									href="https://docs.google.com/document/d/17rfu3cOap-gHVsDEVdeC7nO3BUBbmkSxuOMHKVHl-xU/edit"
+									target="_blank"
+									>Driving the Transition: Strategies for Balancing Growth and
+									Sustainability in Renewable Energy<i
+										class="fa-solid fa-link"
+									></i
+								></a>
+								<br />
+								<br />
+								<br />
+								<a
+									href="https://docs.google.com/document/d/1pex3P_RbQmTpzdS5w5ih6Kji3uT61fTE3OIvVpobmwE/edit?usp=sharing"
+									target="_blank"
+									>Other Case Studies<i class="fa-solid fa-link"></i
+								></a>
+								<br />
+								<br />
+							</div>
+							<div class="modal-footer"><br /></div>
+						</div>
+					</div>
+				</div>
+				<div class="projects project-2">
+					<img src="./assets/project-2.jpg" />
+					<div class="layer">
+						<h3>Articles</h3>
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-link">
+							<a href="https://medium.com/@chiomaokanu01" target="_blank"
+								><i class="fa-solid fa-square-arrow-up-right"></i
+							></a>
+						</button>
+					</div>
+				</div>
+				<div class="projects project-3">
+					<img src="./assets/project-3.jpg" />
+					<div class="layer">
+						<h3>Data Analysis</h3>
+						<!-- Button trigger modal -->
+						<button
+							type="button"
+							class="btn btn-link"
+							data-bs-toggle="modal"
+							data-bs-target="#exampleModal-3"
+						>
+							<i class="fa-solid fa-square-arrow-up-right"></i>
+						</button>
+					</div>
+				</div>
+				<!-- Modal for Project 3 -->
+				<div
+					class="modal fade"
+					id="exampleModal-3"
+					tabindex="-1"
+					aria-labelledby="exampleModalLabel"
+					aria-hidden="true"
+				>
+					<div
+						class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+					>
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-5" id="exampleModalLabel">
+									Data Analysis
+								</h1>
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="modal"
+									aria-label="Close"
+								></button>
+							</div>
+							<div class="modal-body">
+								<br />
+								<a
+									href="https://public.tableau.com/app/profile/chioma5682"
+									target="_blank"
+									>Tableau<i class="fa-solid fa-link"></i
+								></a>
+								<br />
+								<br />
+								<br />
+								<a
+									href="https://1drv.ms/x/c/b184de40e6346187/ETMnMMYIlWFAlCtlVM6PBOYBekhMF6Nb-cc1XPgX6DUfQg?e=FS4f5s"
+									target="_blank"
+									>Data Analysis Project: Sales<i class="fa-solid fa-link"></i
+								></a>
+								<br />
+								<br />
+								<br />
+								<a
+									href="https://1drv.ms/x/c/b184de40e6346187/EbTN8VJ3xKhEkgl0BRquLXkBJmNdM4kBkBA_-IMm_QRuzg?e=GzCsQ7"
+									target="_blank"
+									>Data Analysis Project: Bike Sales<i
+										class="fa-solid fa-link"
+									></i
+								></a>
+								<br />
+								<br />
+							</div>
+							<div class="modal-footer"><br /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- CONTACT SECTION -->
+		<section id="contact">
+			<p class="section__text__p1">Get in Touch</p>
+			<h1 class="title">Contact Me</h1>
+			<div class="row container">
+				<div class="contact-left col-sm-12 col-lg-5">
+					<div class="contact-info">
+						<div class="contact-info-card">
+							<div class="icon-wrapper">
+								<i class="fa-solid fa-location-dot"></i>
+							</div>
+							<h4>Location</h4>
+							<p>London, United Kingdom</p>
+						</div>
+						<div class="contact-info-card">
+							<div class="icon-wrapper">
+								<i class="fa-solid fa-phone"></i>
+							</div>
+							<h4>Phone</h4>
+							<a href="tel:+447958065301">+44 7958065301</a>
+						</div>
+						<div class="social-icons">
+							<a
+								href="#"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="linkedin"
+							>
+								<i class="fa-brands fa-linkedin"></i>
+							</a>
+							<a
+								href="#"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="instagram"
+							>
+								<i class="fa-brands fa-square-instagram"></i>
+							</a>
+							<a
+								href="#"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="spotify position-relative d-inlineblock"
+							>
+								<i class="fa-brands fa-spotify"></i>
+								<span class="position-absolute translate-middle badge bg-none">
+									<i class="fa-solid fa-podcast"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col contact-right">
+					<div class="form-header">
+						<h4>Send Me a Message</h4>
+						<a href="mailto:chiomaokanu2002@gmail.com"
+							>chiomaokanu2002@gmail.com</a
+						>
+					</div>
+					<form method="POST" class="contact-form">
+						<div class="form-group mb-4">
+							<div class="input-group">
+								<input
+									type="text"
+									name="fullname"
+									placeholder="Your Name*"
+									class="form-control"
+									required
+								/>
+							</div>
+							<div class="input-group">
+								<input
+									type="email"
+									name="email"
+									placeholder="Your Email*"
+									class="form-control"
+									required
+								/>
+							</div>
+						</div>
+						<div class="input-group">
+							<input
+								type="text"
+								name="subject"
+								placeholder="Subject (Optional)"
+								class="form-control"
+							/>
+						</div>
+						<div class="input-group">
+							<textarea
+								name="message"
+								rows="5"
+								placeholder="Your Message*"
+								class="form-control"
+								required
+							></textarea>
+						</div>
+						<button type="submit" class="btn btn2">
+							<i class="fa-solid fa-paper-plane"></i> Submit
+						</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- FOOTER -->
+		<footer class="footer pt-3 mt-4">
+			<ul
+				class="footer-links nav justify-c.ntent-center border-bottom pb-3 mb-3"
+			>
+				<li class="nav-item">
+					<a href="#home" class="nav-link px-2 text-black">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#about" class="nav-link px-2 text-black">About</a>
+				</li>
+				<li class="nav-item">
+					<a href="#projects" class="nav-link px-2 text-black">Projects</a>
+				</li>
+			</ul>
 
-      <p class="text-center text-body-secondary">© 2024 Ben-Emu David</p>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-  </body>
+			<p class="text-center text-body-secondary">© 2024 Ben-Emu David</p>
+		</footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+		<script src="script.js"></script>
+	</body>
 </html>
