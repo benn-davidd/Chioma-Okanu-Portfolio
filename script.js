@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function toggleMenu() {
-	// const menu = document.querySelector(".menu-links");
 	const menuItems = document.querySelectorAll(".menu-items");
-	// const icon = document.querySelector(".hamburger");
 	const menuCheckbox = document.getElementById("sidebar-active");
 	menuItems.forEach((link) => {
 		link.addEventListener("click", function () {
@@ -11,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function toggleMenu() {
 });
 
 /* -- SCROLL REVEAL ANIMATION -- */
+
 const sr = ScrollReveal({
 	origin: "top",
 	distance: "80px",
@@ -18,14 +17,14 @@ const sr = ScrollReveal({
 	reset: false,
 });
 
-/* -- PROJECT BOX -- */
+// PROJECT BOX
 sr.reveal(".project-box", { interval: 200 });
 
-/* -- HEADINGS -- */
+// HEADINGS
 sr.reveal(".section__text__p1", {});
 sr.reveal(".title", {});
 
-/* -- PROJECTS -- */
+// PROJECTS
 const srBottom = ScrollReveal({
 	origin: "bottom",
 	distance: "80px",
@@ -35,8 +34,9 @@ const srBottom = ScrollReveal({
 
 sr.reveal(".projects", {});
 
-/* ----- ## -- SCROLL REVEAL LEFT_RIGHT ANIMATION -- ## ----- */
-/* -- ABOUT INFO & CONTACT INFO -- */
+/* ----- SCROLL REVEAL LEFT_RIGHT ANIMATION ----- */
+// ABOUT INFO & CONTACT INFO
+
 const srLeft = ScrollReveal({
 	origin: "left",
 	distance: "80px",
@@ -47,7 +47,8 @@ const srLeft = ScrollReveal({
 srLeft.reveal(".about-info", { delay: 100 });
 srLeft.reveal(".contact-left", { delay: 100 });
 
-/* -- ABOUT SKILLS & FORM BOX -- */
+// ABOUT SKILLS & FORM BOX
+
 const srRight = ScrollReveal({
 	origin: "right",
 	distance: "80px",
@@ -57,6 +58,8 @@ const srRight = ScrollReveal({
 
 srRight.reveal(".skills-box", { delay: 100 });
 srRight.reveal(".contact-right", { delay: 100 });
+
+// CONTACT FORM
 
 // using EmailJS api create an account here: https://www.emailjs.com
 emailjs.init("Ej8Cm6Sty2n1ug-7B");
@@ -84,11 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		};
 
 		console.log("Form values being sent:", formValues);
-
-		// Form validation
-		// const name = formValues.from_name;
-		// const email = formValues.from_email;
-		// const message = formValues.message;
 
 		if (
 			!formValues.from_name ||
@@ -120,3 +118,10 @@ document.addEventListener("DOMContentLoaded", function () {
 			);
 	});
 });
+
+// COPYRIGHT
+
+const currentYear = new Date().getFullYear();
+
+document.getElementById("copyright").innerHTML =
+	"&copy; " + currentYear + ". Ben-Emu David";
