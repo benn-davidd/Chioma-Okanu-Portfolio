@@ -125,7 +125,7 @@ nav {
 	align-items: flex-start;
 	list-style: none;
 	height: 100%;
-	width: 100%;
+	width: 50%;
 	flex-direction: column;
 	box-sizing: border-box;
 	justify-content: flex-start;
@@ -134,7 +134,6 @@ nav {
 	top: 0;
 	right: -100%;
 	z-index: 10;
-	width: 50%;
 
 	background: #456670;
 	background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");

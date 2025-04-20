@@ -124,4 +124,4 @@ document.addEventListener("DOMContentLoaded", function () {
 const currentYear = new Date().getFullYear();
 
 document.getElementById("copyright").innerHTML =
-	"&copy; " + currentYear + ". Ben-Emu David";
+	"&copy; " + currentYear + ". David Ben-Emu";
